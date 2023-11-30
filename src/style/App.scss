@@ -1,0 +1,98 @@
+$my-primary-color: #35527c;
+$my-secondary-color: #2e302d;
+$my-light-color: #cdd2d5;
+
+body {
+  background-color: $my-primary-color;
+  color: $my-secondary-color;
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+
+  header {
+    width: 100%;
+    background-color: #2e302d;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  .nameSoccerSchool {
+    color: $my-light-color;
+    text-align: center;
+  }
+
+  form {
+    color: $my-light-color;
+    background-color:  #2e302d;
+    width: 85%;
+    height: auto;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin-bottom: 5px;
+      }
+
+      input,
+      select,
+      textarea
+      {
+        background-color: $my-primary-color;
+        color: $my-light-color;
+        border: none;
+        outline: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+
+    .inputRadio {
+      display: block;
+
+      span {
+        display: block;
+      }
+
+      input {
+        margin: 10px;
+      }
+    }
+
+    button {
+      width: 100%;
+      background-color: $my-light-color;
+      color: $my-secondary-color;
+      font-size: 15px;
+      letter-spacing: 2orpx;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $my-primary-color;
+        transition: .4s ease-in-out;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
